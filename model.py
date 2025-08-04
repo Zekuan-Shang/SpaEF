@@ -104,7 +104,7 @@ class feat_AutoEncoder(nn.Module):
     
 
 class DenoiseAE(nn.Module):
-    def __init__(self, cell_num, gene_num, latent_dim=54):
+    def __init__(self, cell_num, gene_num, latent_dim=64):
         super().__init__()
         
         self.CellGraphAE = feat_AutoEncoder(input_dim=gene_num, latent_dim=latent_dim)
@@ -160,4 +160,5 @@ gene_graph_index = torch.randint(0, gene_num, (2, gene_edges), dtype=torch.long)
 gene_graph_attn = F.softmax(torch.randn(gene_num, gene_num), dim=-1)
 print(cell_graph_index.shape)
 print(cell_graph_index)
+
 '''
