@@ -73,7 +73,7 @@ class WorkFlow():
 
     def cell_graph(self, epochs=1000, k=10):
         # load loki 
-        model_path = "/root/autodl-tmp/data/loki/checkpoint.pt"
+        model_path = "checkpoint.pt"
         device = self.device
         model, _, tokenizer = utils.load_model(model_path, device)
         model.eval()
@@ -83,7 +83,7 @@ class WorkFlow():
         coords_df = self.coordinate_matrix
         st_adata = sc.AnnData(X=csr_matrix(expr_df.values), obs=coords_df, var=pd.DataFrame(index=expr_df.columns))
         st_adata.obsm['spatial'] = coords_df[['x', 'y']].values 
-        h4kp_gene_path = "/root/autodl-tmp/data/loki/housekeeping_genes.csv"
+        h4kp_gene_path = "housekeeping_genes.csv"
         house_keeping = pd.read_csv(h4kp_gene_path, index_col=0)
         st_text_features = preprocess.generate_gene_df(st_adata, house_keeping_genes=house_keeping)
         st_embeddings = utils.encode_text_df(model, tokenizer, st_text_features, 'label', device)
@@ -149,16 +149,16 @@ class WorkFlow():
         print("Cell graph index saved to cell_graph_index.pt")
         
     def gene_graph(self, top_k=10):
-        gg_embedding_path = '/root/autodl-tmp/data/genept/GenePT_gene_embedding_ada_text.pickle'
+        gg_embedding_path = 'GenePT_gene_embedding_ada_text.pickle'
         with open(gg_embedding_path, 'rb') as f:
             embeddings = pickle.load(f)
-        gg_model_path = "/root/autodl-tmp/data/genept/gene_interaction_model.pkl"
+        gg_model_path = "gene_interaction_model.pkl"
         try:
             with open(gg_model_path, 'rb') as f:
                 model = pickle.load(f)
         except FileNotFoundError:
-            gg_text_labels = '/root/autodl-tmp/data/genept/train_text.txt'
-            gg_label_path = '/root/autodl-tmp/data/genept/train_label.txt'
+            gg_text_labels = 'train_text.txt'
+            gg_label_path = 'train_label.txt'
             pairs = []
             with open(gg_text_labels) as f:
                 for line in f:
@@ -280,3 +280,4 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=800)
     args = parser.parse_args()
     WorkFlow(args.root_path, args.epochs)
+
