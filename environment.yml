@@ -1,0 +1,51 @@
+name: SpaEF
+channels:
+  - pytorch
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pip
+
+  # ===== Core ML =====
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+
+  # ===== Visualization =====
+  - matplotlib
+  - seaborn
+
+  # ===== pip packages =====
+  - pip:
+      # --- Deep Learning ---
+      - torch==2.7.0
+      - torchvision==0.22.0
+      - torchaudio==2.7.0
+      - triton==3.3.0
+
+      # --- Graph Learning ---
+      - torch-geometric==2.6.1
+      - pyg-lib
+      - torch-scatter
+      - torch-sparse
+      - torch-cluster
+      - torch-spline-conv
+
+      # --- CV / Models ---
+      - opencv-python
+      - timm
+      - open-clip-torch
+
+      # --- Data Science ---
+      - scanpy
+      - anndata
+      - umap-learn
+      - numba
+
+      # --- Utils ---
+      - tqdm
+      - pyyaml
+      - requests
+      - pillow
