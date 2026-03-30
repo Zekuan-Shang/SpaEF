@@ -9,7 +9,7 @@ You should download the checkpoints and other files from their tutorials first.
 
 checkpoint.pt of OmiCLIP: https://guangyuwanglab2021.github.io/Loki/pretrain.html
 
-checkpoint.pt of GenePT: https://github.com/yiqunchen/GenePT
+GenePT_gene_embedding_ada_text.pickle of GenePT: https://github.com/yiqunchen/GenePT
 
 And then you can start easily by using the following script after downloading the source code.
 
