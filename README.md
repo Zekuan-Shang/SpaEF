@@ -16,10 +16,10 @@ Expression.csv (spots * genes) and coordinate.csv (spots * coordinates) should b
 
 ### Benchmark
 For benchmarks, you can download them by following the links:
-HOCWT: https://www.10xgenomics.com/datasets/human-ovarian-cancer-whole-transcriptome-analysis-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0
-HGBM: https://www.10xgenomics.com/datasets/gene-and-protein-expression-library-of-human-glioblastoma-cytassist-ffpe-2-standard
-HDHBC: https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-human-breast-cancer-ffpe-if
-DLPFC: https://research.libd.org/globus/
+# HOCWT: https://www.10xgenomics.com/datasets/human-ovarian-cancer-whole-transcriptome-analysis-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0
+# HGBM: https://www.10xgenomics.com/datasets/gene-and-protein-expression-library-of-human-glioblastoma-cytassist-ffpe-2-standard
+# HDHBC: https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-human-breast-cancer-ffpe-if
+# DLPFC: https://research.libd.org/globus/
 
 We supply a pre_process.py to handle the raw dataset.
 ```
