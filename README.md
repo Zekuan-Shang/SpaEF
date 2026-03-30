@@ -15,9 +15,9 @@ And then you can start easily by using the following script after downloading th
 cd SpaEF
 conda env create -f environment.yml
 conda activate SpaEF
-python main.py --root_path YOUR_INPUT_DATA_PATH 
+python main.py --root_path YOUR_INPUT_DATA_DIR 
 ```
-Expression.csv (spots * genes) and coordinate.csv (spots * coordinates) should be in YOUR_INPUT_DATA_PATH. 
+expression.csv (spots * genes) and coordinate.csv (spots * coordinates) should be in YOUR_INPUT_DATA_DIR. 
 
 ### Benchmark
 For benchmarks, you can download them by following the links:
