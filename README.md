@@ -21,4 +21,7 @@ HGBM: https://www.10xgenomics.com/datasets/gene-and-protein-expression-library-o
 HDHBC: https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-human-breast-cancer-ffpe-if
 DLPFC: https://research.libd.org/globus/
 
-
+We supply a pre_process.py to handle the raw dataset.
+```
+python pre_process.py
+```
