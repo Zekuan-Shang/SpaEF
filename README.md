@@ -3,6 +3,9 @@
 A new SRT data denoising method powered by pre-trained large models. 
 
 ### Usage 
+We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. You should download the checkpoints and other files from their tutorials first.
+checkpoint.pt of OmiCLIP: https://guangyuwanglab2021.github.io/Loki/pretrain.html
+checkpoint.pt of GenePT: https://github.com/yiqunchen/GenePT
 You can start easily by using the following script after downloading the source code.
 
 ```
@@ -30,8 +33,6 @@ python pre_process.py
 ```
 
 # Acknowledgments 
-We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. We supplied the required checkpoints and files in SpaEF, which were downloaded from their tutorials.
+We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. You should download the checkpoints and other files from their tutorials first.
 
-OmiCLIP: https://guangyuwanglab2021.github.io/Loki/pretrain.html
 
-GenePT: https://github.com/yiqunchen/GenePT
