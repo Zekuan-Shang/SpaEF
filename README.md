@@ -3,13 +3,11 @@
 A new SRT data denoising method powered by pre-trained large models. 
 
 ### Usage 
-We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. 
+We utilize pre-trained LMs in SpaEF and you should download the checkpoints from the links first:
 
-You should download the checkpoints and other files from their tutorials first.
+checkpoint.pt of OmiCLIP:  https://guangyuwanglab2021.github.io/Loki/pretrain.html
 
-checkpoint.pt of OmiCLIP: https://guangyuwanglab2021.github.io/Loki/pretrain.html
-
-GenePT_gene_embedding_ada_text.pickle of GenePT: https://github.com/yiqunchen/GenePT
+GenePT_gene_embedding_ada_text.pickle of GenePT:  https://github.com/yiqunchen/GenePT
 
 And then you can start easily by using the following script after downloading the source code.
 
@@ -38,7 +36,7 @@ python pre_process.py
 ```
 
 # Acknowledgments 
-We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. The housekeeping_genes.csv we supplied is is obtained from the Molecular Signatures Database (MSigDB): https://www.gsea-msigdb.org/gsea/msigdb/.
+We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors in SpaEF. The housekeeping_genes.csv we supplied is obtained from the Molecular Signatures Database (MSigDB): https://www.gsea-msigdb.org/gsea/msigdb/.
 
 [1] Chen, W., Zhang, P., Tran, T.N. et al. A visual–omics foundation model to bridge histopathology with spatial transcriptomics. Nat Methods 22, 1568–1582 (2025). https://doi.org/10.1038/s41592-025-02707-1
 
