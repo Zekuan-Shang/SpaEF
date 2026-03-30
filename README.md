@@ -38,6 +38,10 @@ python pre_process.py
 ```
 
 # Acknowledgments 
-We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. You should download the checkpoints and other files from their tutorials first.
+We utilize OmiCLIP[1] and GenePT[2] as feature encoders or prior knowledge injectors. The housekeeping_genes.csv we supplied is is obtained from the Molecular Signatures Database (MSigDB): https://www.gsea-msigdb.org/gsea/msigdb/.
+
+[1] Chen, W., Zhang, P., Tran, T.N. et al. A visual–omics foundation model to bridge histopathology with spatial transcriptomics. Nat Methods 22, 1568–1582 (2025). https://doi.org/10.1038/s41592-025-02707-1
+
+[2] Chen, Y., Zou, J. Simple and effective embedding model for single-cell biology built from ChatGPT. Nat. Biomed. Eng 9, 483–493 (2025). https://doi.org/10.1038/s41551-024-01284-6
 
 
