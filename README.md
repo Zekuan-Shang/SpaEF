@@ -2,6 +2,8 @@
 
 A new SRT data denoising method powered by pre-trained large models. 
 
+Papaer at OpenReview: https://openreview.net/pdf?id=QO1uZg4fj4
+
 ### Usage 
 We utilize pre-trained LMs in SpaEF and you should download the checkpoints from the links first:
 
